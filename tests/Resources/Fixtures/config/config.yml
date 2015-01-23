@@ -1,0 +1,3 @@
+rollerworks_search_doctrine_orm:
+    entity_managers: [default, secure]
+    cache_driver:    null

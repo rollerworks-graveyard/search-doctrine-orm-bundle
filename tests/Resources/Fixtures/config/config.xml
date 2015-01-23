@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:rollerworks-search-doctrine-orm="http://rollerworks.github.io/schema/search/sf-dic/rollerworks-search-doctrine-orm"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd
+                        http://rollerworks.github.io/schema/search/sf-dic/rollerworks-search-doctrine-orm http://rollerworks.github.io/schema/search/sf-dic/rollerworks-search-doctrine-orm/rollerworks-search-doctrine-orm-1.0.xsd">
+
+    <rollerworks-search-doctrine-orm:config cache-driver="null">
+        <rollerworks-search-doctrine-orm:entity-manager>default</rollerworks-search-doctrine-orm:entity-manager>
+        <rollerworks-search-doctrine-orm:entity-manager>secure</rollerworks-search-doctrine-orm:entity-manager>
+    </rollerworks-search-doctrine-orm:config>
+</container>

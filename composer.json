@@ -1,0 +1,41 @@
+{
+    "name": "rollerworks/search-doctrine-orm-bundle",
+    "description": "DoctrineORM Symfony integration Bundle for RollerworksSearch",
+    "keywords": ["search", "rollerworks", "symfony", "doctrine", "bundle"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastiaan Stok",
+            "email": "s.stok@rollercapes.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "doctrine/doctrine-bundle": "~1.1",
+        "rollerworks/search-bundle": "~1.0@dev,>1.0.0-beta2@dev",
+        "rollerworks/search-doctrine-orm": "~1.0@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1",
+        "matthiasnoback/symfony-dependency-injection-test": "^0.7.1",
+        "matthiasnoback/symfony-service-definition-validator": "^1.2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rollerworks\\Bundle\\SearchDoctrineOrmBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rollerworks\\Bundle\\SearchDoctrineOrmBundle\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

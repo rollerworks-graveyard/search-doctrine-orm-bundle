@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns="http://rollerworks.github.io/schema/dic/rollerworks-search"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://rollerworks.github.io/schema/dic/rollerworks-search"
+    elementFormDefault="qualified">
+
+    <xsd:element name="config" type="config" />
+
+    <xsd:complexType name="config">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="entity-manager" type="xsd:string" maxOccurs="unbounded" minOccurs="0" />
+        </xsd:choice>
+        <xsd:attribute name="cache-driver" type="xsd:string" />
+    </xsd:complexType>
+
+</xsd:schema>
+
