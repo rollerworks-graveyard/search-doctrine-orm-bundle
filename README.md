@@ -9,7 +9,7 @@ with any Symfony based application.
 Installation
 ------------
 
-**Note:** This package is an extension for the [RollerworksSearchBundle][2]
+This package is an extension for the [RollerworksSearchBundle][2]
 make sure you have successfully installed and configured the bundle before continuing.
 
 Require the rollerworks/search-doctrine-orm-bundle package in your composer.json
@@ -45,7 +45,7 @@ You can use any driver supported by Doctrine for caching.
 
 **Note:** The default driver uses an array which is only cached in memory.
 
-Use service-id as value for `rollerworks_search_doctrine_orm.cache_driver`.
+Use a service-id as value for `rollerworks_search_doctrine_orm.cache_driver`.
 
 ``` yaml
 # app/config/config.yml
@@ -67,7 +67,7 @@ rollerworks_search_doctrine_orm:
 Usage
 -----
 
-The `rollerworks_search.doctrine_orm.factory` provides the
+The `rollerworks_search.doctrine_orm.factory` service provides the
 `Rollerworks\Component\Search\Doctrine\Orm\DoctrineOrmFactory` for creating WhereBuilders.
 
 License
