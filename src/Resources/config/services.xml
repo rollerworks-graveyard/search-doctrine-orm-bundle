@@ -10,7 +10,7 @@
             <argument type="service" id="rollerworks_search.doctrine_orm.cache_driver" on-invalid="null" />
         </service>
         <service id="rollerworks_search.type_extension.doctrine_orm" class="Rollerworks\Component\Search\Extension\Doctrine\Orm\DoctrineOrmExtension">
-            <tag name="form.type_extension" alias="field" />
+            <tag name="rollerworks_search.extension" />
             <argument type="service" id="doctrine"/>
             <argument>%rollerworks_search.doctrine_orm.entity_managers%</argument>
         </service>
