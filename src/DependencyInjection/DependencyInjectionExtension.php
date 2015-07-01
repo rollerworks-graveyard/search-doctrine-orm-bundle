@@ -26,7 +26,7 @@ final class DependencyInjectionExtension extends Extension
         $config = $this->processConfiguration($configuration, $config);
 
         if (empty($config['entity_managers'])) {
-            $config['entity_managers'] = array('default');
+            $config['entity_managers'] = ['default'];
         }
 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Rollerworks\Bundle\SearchDoctrineOrmBundle\Tests\Unit\DependencyInjection;
+namespace Rollerworks\Bundle\SearchDoctrineOrmBundle\Tests\DependencyInjection;
 
 use Matthias\SymfonyConfigTest\PhpUnit\AbstractConfigurationTestCase;
 use Rollerworks\Bundle\SearchDoctrineOrmBundle\DependencyInjection\Configuration;
@@ -19,28 +19,28 @@ class ConfigurationTest extends AbstractConfigurationTestCase
     public function testDefaultsAreValid()
     {
         $this->assertProcessedConfigurationEquals(
-            array(
-                array(),
-            ),
-            array(
-                'entity_managers' => array(),
+            [
+                [],
+            ],
+            [
+                'entity_managers' => [],
                 'cache_driver' => 'rollerworks_search.doctrine_orm.cache.array_driver',
-            )
+            ]
         );
     }
 
     public function testCustomEntityManagers()
     {
         $this->assertProcessedConfigurationEquals(
-            array(
-                array(
-                    'entity_managers' => array('default', 'custom'),
-                ),
-            ),
-            array(
-                'entity_managers' => array('default', 'custom'),
+            [
+                [
+                    'entity_managers' => ['default', 'custom'],
+                ],
+            ],
+            [
+                'entity_managers' => ['default', 'custom'],
                 'cache_driver' => 'rollerworks_search.doctrine_orm.cache.array_driver',
-            )
+            ]
         );
     }
 

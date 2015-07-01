@@ -26,6 +26,7 @@ Add the RollerworksSearchDoctrineOrmBundle to your application's kernel:
 $bundles = array(
     ...
     new Rollerworks\Bundle\SearchBundle\RollerworksSearchBundle(),
+    new Rollerworks\Bundle\SearchDoctrineDbalBundle\RollerworksSearchDoctrineDbalBundle(),
     new Rollerworks\Bundle\SearchDoctrineOrmBundle\RollerworksSearchDoctrineOrmBundle(),
     ...
 );
