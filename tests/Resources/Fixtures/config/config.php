@@ -12,8 +12,8 @@
 /* @var $container \Symfony\Component\DependencyInjection\ContainerBuilder */
 $container->loadFromExtension(
     'rollerworks_search_doctrine_orm',
-    array(
-        'entity_managers' => array('default', 'secure'),
+    [
+        'entity_managers' => ['default', 'secure'],
         'cache_driver' => null,
-    )
+    ]
 );

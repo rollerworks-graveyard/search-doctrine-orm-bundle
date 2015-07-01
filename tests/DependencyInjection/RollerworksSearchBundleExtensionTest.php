@@ -27,27 +27,27 @@ final class RollerworksSearchBundleExtensionTest extends AbstractExtensionTestCa
 
     public function tesWithCustomEntityManagers()
     {
-        $config = array(
-            'entity_managers' => array(
+        $config = [
+            'entity_managers' => [
                 'default',
                 'secure',
-            ),
+            ],
             'cache_driver' => 'acme_test.orm.cache_driver',
-        );
+        ];
 
         $this->container->setDefinition('acme_test.orm.cache_driver', new Definition('Doctrine\Common\Cache\PhpFileCache'));
 
         $this->load($config);
         $this->compile();
 
-        $this->assertEquals(array('default', 'secure'), $this->container->getParameter('rollerworks_search.doctrine_orm.entity_managers'));
+        $this->assertEquals(['default', 'secure'], $this->container->getParameter('rollerworks_search.doctrine_orm.entity_managers'));
         $this->assertContainerBuilderHasService('rollerworks_search.doctrine_orm.cache_driver', 'Doctrine\Common\Cache\PhpFileCache');
     }
 
     protected function getContainerExtensions()
     {
-        return array(
+        return [
             new DependencyInjectionExtension(),
-        );
+        ];
     }
 }

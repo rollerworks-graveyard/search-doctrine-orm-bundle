@@ -19,24 +19,24 @@ class ExtensionConfigurationTest extends AbstractExtensionConfigurationTestCase
 {
     public function testSupportsAllConfigFormats()
     {
-        $expectedConfiguration = array(
-            'entity_managers' => array('default', 'secure'),
+        $expectedConfiguration = [
+            'entity_managers' => ['default', 'secure'],
             'cache_driver' => null,
-        );
+        ];
 
         $formats = array_map(
             function ($path) {
                 return __DIR__.'/../Resources/Fixtures/'.$path;
             },
-            array(
+            [
                 'config/config.yml',
                 'config/config.xml',
                 'config/config.php',
-            )
+            ]
         );
 
         foreach ($formats as $format) {
-            $this->assertProcessedConfigurationEquals($expectedConfiguration, array($format));
+            $this->assertProcessedConfigurationEquals($expectedConfiguration, [$format]);
         }
     }
 
