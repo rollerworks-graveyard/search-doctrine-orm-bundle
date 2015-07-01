@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Rollerworks\Bundle\SearchDoctrineOrmBundle\Tests\Unit\DependencyInjection;
+namespace Rollerworks\Bundle\SearchDoctrineOrmBundle\Tests\DependencyInjection;
 
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
 use Rollerworks\Bundle\SearchDoctrineOrmBundle\DependencyInjection\DependencyInjectionExtension;
