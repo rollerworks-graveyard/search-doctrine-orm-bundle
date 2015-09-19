@@ -9,16 +9,21 @@
             "name": "Sebastiaan Stok",
             "email": "s.stok@rollercapes.net"
         }
+        ,
+        {
+            "name": "Community contributions",
+            "homepage": "https://github.com/Rollerworks/rollerworks-search-doctrine-orm-bundle/contributors"
+        }
     ],
     "require": {
         "php": ">=5.4",
         "doctrine/doctrine-bundle": "~1.1",
-        "rollerworks/search-bundle": "~1.0@dev,>1.0.0-beta2@dev",
-        "rollerworks/search-doctrine-dbal-bundle": "~1.0",
-        "rollerworks/search-doctrine-orm": "~1.0@dev"
+        "rollerworks/search-bundle": "^1.0.0",
+        "rollerworks/search-doctrine-dbal-bundle": "^1.0.0",
+        "rollerworks/search-doctrine-orm": "^1.0.0"
     },
     "require-dev": {
-        "matthiasnoback/symfony-dependency-injection-test": "^0.7.1",
+        "matthiasnoback/symfony-dependency-injection-test": "^0.7.4",
         "matthiasnoback/symfony-service-definition-validator": "^1.2.2"
     },
     "autoload": {
@@ -30,11 +35,6 @@
         "psr-4": {
             "Rollerworks\\Bundle\\SearchDoctrineOrmBundle\\Tests\\": "tests/"
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-        "config": {
-        "bin-dir": "bin"
     },
     "extra": {
         "branch-alias": {
